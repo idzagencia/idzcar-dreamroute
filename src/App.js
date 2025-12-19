@@ -22,6 +22,7 @@ import VendaSeuCarro from './pages/VendaSeuCarro';
 import Institucional from './pages/Institucional';
 import Page404 from './pages/Page404';
 import Importacao from './pages/Importacao';
+import Grupo from './pages/Grupo';
 
 import Hotjar from '@hotjar/browser';
 
@@ -88,6 +89,7 @@ function AppRoutes() {
       <Route exact path="/institucional/:url" element={<Institucional />} />
       <Route exact path="/importacao/" element={<Importacao />} />
       <Route path="/*" element={<Page404 />} />
+      <Route path="/grupo" element={<Grupo />} />
       {/* END NOT FOUND*/}
     </Routes>
   );
